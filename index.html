@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Star Wars Hangman</title>
+    <title>UEFA Cahmpions League Hangman</title>
 </head>
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -20,19 +20,19 @@
     </div>
     <!--Area of the game-->
     <div class="row" style="margin-top:20px">
-        <div class="col-2">
+        <div class="col-1">
 
         </div>
         <!--Area for the logo of the teams-->
-        <div class="col-4">
-            <img src="assets/images/Trophy.jpg" alt="Team logo" style= "width:80%; height:80%;">
+        <div class="col-3">
+            <img id="win" src="assets/images/Trophy.jpg" alt="Team logo" class="img-fluid">
 
 
         </div>
         <!--Area for the game-->
-        <div class="col-4">
+        <div class="col-6">
             <div class="row justify-content-center">
-                <h2 class="title">
+                <h2 class="title" id="Message">
                     Press Any Key to Play
                 </h2>
             </div>
@@ -54,11 +54,22 @@
             </div>
         </div>
 
-        </div>
-        <div class="col-2">
+        
+        <div class="col-1">
 
         </div>
-
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h4>
+                Wins: <span id="Scorewins"></span>
+            </h4>
+        </div>
+    <div clas="col-6">
+        <h4>
+        Losses: <span id="Scoreloss"></span>
+        </h4>
+    </div>
     </div>
 
 </div>
